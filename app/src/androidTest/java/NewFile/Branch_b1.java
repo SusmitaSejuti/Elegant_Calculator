@@ -5,13 +5,27 @@ public class Branch_b1 {
     int roll;
     float cgpa;
 
+    //master:
+    int total_Student;
+    String department;
+
     //constructor:
-    Branch_b1(String n, int r, float c)
+
+    public Branch_b1(String name, int roll, float cgpa, int total_Student, String department) {
+        this.name = name;
+        this.roll = roll;
+        this.cgpa = cgpa;
+        this.total_Student = total_Student;
+        this.department = department;
+    }
+
+   /* Branch_b1(String n, int r, float c)
     {
         this.name = n;
         this.roll = r;
         this.cgpa = c;
-    }
+    }*/
+
 
     //setter:
     public void setName(String name)
@@ -30,6 +44,13 @@ public class Branch_b1 {
         this.cgpa = cgpa;
     }
 
+    public void setTotal_Student(int total_Student) {
+        this.total_Student = total_Student;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
 
     //getter:
     public String getName()
@@ -45,5 +66,13 @@ public class Branch_b1 {
     public float getCgpa()
     {
         return cgpa;
+    }
+
+    public int getTotal_Student() {
+        return total_Student;
+    }
+
+    public String getDepartment() {
+        return department;
     }
 }
