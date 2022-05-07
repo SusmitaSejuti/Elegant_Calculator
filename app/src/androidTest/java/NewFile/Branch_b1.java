@@ -9,27 +9,21 @@ public class Branch_b1 {
     //b2
     String id, password;
 
+  
+  
     //constructor:
-
-
-    public Branch_b1(String name, int roll, float cgpa, String id, String password) {
+    public Branch_b1(String name, int roll, float cgpa, String id, String password) 
+    {
         this.name = name;
         this.roll = roll;
         this.cgpa = cgpa;
         this.id = id;
-        this.password = password;
-    }
+        this.password = password
+      }
+   
 
-    /*Branch_b1(String n, int r, float c)
-    {
-        this.name = n;
-        this.roll = r;
-        this.cgpa = c;
-    }
-*/
     //setter:
     public void setName(String name)
-
     {
         this.name = name;
     }
@@ -43,15 +37,18 @@ public class Branch_b1 {
     {
         this.cgpa = cgpa;
     }
-
+  
     public void setId(String id) {
         this.id = id;
     }
 
     public void setPassword(String password) {
         this.password = password;
+
     }
 
+  
+  
     //getter:
     public String getName()
     {
@@ -68,11 +65,13 @@ public class Branch_b1 {
         return cgpa;
     }
 
-    public String getId() {
+    public String getId()
+    {
         return id;
     }
 
-    public String getPassword() {
+    public String getPassword()
+    {
         return password;
     }
 }
