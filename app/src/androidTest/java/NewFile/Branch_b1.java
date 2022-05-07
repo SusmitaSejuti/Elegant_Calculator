@@ -1,35 +1,29 @@
 package NewFile;
 
 public class Branch_b1 {
+   //b1
     String name;
     int roll;
     float cgpa;
 
-    //master:
-    int total_Student;
-    String department;
+    //b2
+    String id, password;
 
+  
+  
     //constructor:
-
-    public Branch_b1(String name, int roll, float cgpa, int total_Student, String department) {
+    public Branch_b1(String name, int roll, float cgpa, String id, String password) 
+    {
         this.name = name;
         this.roll = roll;
         this.cgpa = cgpa;
-        this.total_Student = total_Student;
-        this.department = department;
-    }
-
-   /* Branch_b1(String n, int r, float c)
-    {
-        this.name = n;
-        this.roll = r;
-        this.cgpa = c;
-    }*/
-
+        this.id = id;
+        this.password = password
+      }
+   
 
     //setter:
     public void setName(String name)
-
     {
         this.name = name;
     }
@@ -43,15 +37,18 @@ public class Branch_b1 {
     {
         this.cgpa = cgpa;
     }
-
-    public void setTotal_Student(int total_Student) {
-        this.total_Student = total_Student;
+  
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setPassword(String password) {
+        this.password = password;
+
     }
 
+  
+  
     //getter:
     public String getName()
     {
@@ -68,11 +65,13 @@ public class Branch_b1 {
         return cgpa;
     }
 
-    public int getTotal_Student() {
-        return total_Student;
+    public String getId()
+    {
+        return id;
     }
 
-    public String getDepartment() {
-        return department;
+    public String getPassword()
+    {
+        return password;
     }
 }
